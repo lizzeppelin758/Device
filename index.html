@@ -43,7 +43,7 @@
           <ul class="nav-list">
             <li class="primary-nav-item">
               <div class="catalog-nav-container">
-                <a class="primary-nav-link" href="#">Каталог</a>
+                <a class="primary-nav-link" href="#">Каталог товаров </a>
                 <button class="catalog-popup-button" type="button">
                   <span class="visually-hidden">Открыть каталог</span>
                 </button>
@@ -187,7 +187,7 @@
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="service-list">
               <li class="service-item">
-                <button class="service-button button-link button-active" type="button">Доставка</button>
+                <button class="service-button button-link-active" type="button">Доставка</button>
               </li>
               <li class="service-item">
                 <button class="service-button button-link" type="button">Гарантия</button>
@@ -198,8 +198,75 @@
             </ul>
             <div class="service-description">
               <h3 class="service-desc-title">Доставка</h3>
-              <p class="service-desc-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="service-desc-desc">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
+          </div>
+        </section>
+        <section class="rare-delivery">
+          <a href="#" class="rare-delivery-link">
+            <div class="delivery-car-container"></div>
+            <h2 class="rare-delivery-title">Доставим редкий товар под заказ</h2>
+            <button class="info-delivery-button">
+              <span class="visually-hidden">Информация о доставке редких товаров</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" viewBox="0 0 2 12" fill="none">
+                <g opacity="1" clip-path="url(#clip0_56036_747)">
+                <path d="M2 0H0V2H2V0Z" fill="black"/>
+                <path d="M2 4H0V12H2V4Z" fill="black"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_56036_747">
+                <rect width="2" height="12" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </button>
+          </a>
+        </section>
+        <section class="info-company">
+          <article class="about-us info-company-part">
+            <h2 class="info-company-title">О нас</h2>
+            <p class="info-company-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="info-company-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <ul class="transport-list">
+              <li class="transport-item">Меловые линии</li>
+              <li class="transport-item">СДИК</li>
+              <li class="transport-item">ТоксБерри</li>
+            </ul>
+            <a href="#" class="about-us-link button-link">Подробнее о нас</a>
+          </article>
+          <article class="contacts info-company-part">
+            <h2 class="info-company-title">Контакты</h2>
+            <p class="info-company-text"> Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки. </p>
+            <section class="contact-company">  
+              <h3 class="info-company-subtitle">Интернет-магазин «Девайс»</h3>
+              <address class="info-company-adress">
+                <a class="info-company-adress-link info-company-text" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+              </address>
+              <a class="info-company-phone-link" href="tel:+78128121212">
+                <span class="phone-number">+7 (812) 812-12-12</span>
+              </a>
+            </section>
+            <section class="work-company">
+              <h3 class="info-company-subtitle">Время работы</h3>
+              <ul class="work-time-list">
+                <li class="work-time-item info-company-text">пн—пт: с 10:00 до 22:00</li>
+                <li class="work-time-item info-company-text">сб—вс: с 10:00 до 19:00</li>
+              </ul>
+            </section>
+            <a href="#" class="contacts-link button-link">Напишите нам</a>
+          </article>
+        </section>
+        <section class="subscribe">
+          <div class="subscribe-container">
+            <div class="subscribe-desc-container">
+              <h2 class="subscribe-title">Подпишитесь<br>на рассылку</h2>
+              <p class="subscribe-desc">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="subscribe-input standart-input" type="email" name="e-mail" placeholder="Ваш e-mail">
+              <button class="subscribe-button" type="submit">Подписаться</button>
+              <span class="subscribe-note">Это бесплатно</span>
+            </form>
           </div>
         </section>
     </main>
@@ -284,5 +351,72 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal-content">
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close" type="button">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+              <g clip-path="url(#clip0_56064_635)">
+              <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_56064_635">
+              <rect width="26" height="26" fill="white"/>
+              </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <fieldset class="modal-fieldset your-name">
+            <label class="modal-label" for="name">Ваше имя</label>
+            <input class="modal-input standart-input" id="name" type="text" name="yourname" placeholder="Введите имя">
+          </fieldset>
+          <fieldset class="modal-fieldset your-email">
+            <label class="modal-label" for="email">Ваш e-mail</label>
+            <input class="modal-input email-input standart-input" id="email" type="email" name="email" placeholder="Ваш e-mail">
+            <span class="email-input-note">Забавный у вас адрес</span>
+          </fieldset>
+          <fieldset class="modal-fieldset your-order">
+            <label class="modal-label" for="order">Что нужно привезти</label>
+            <input class="modal-input standart-input" id="order" name="order" type="text" placeholder="В свободной форме">
+          </fieldset>
+          <fieldset class="modal-fieldset your-quantity">
+            <div class="label-info-container">
+              <label class="modal-label" for="quantity">Количество</label>
+              <button class="info-quantity" type="button">
+                <span class="visually-hidden">Показать информацию о количестве товара</span>
+              </button>
+              <div class="info-popup">
+              <div class="info-quantity-content">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</div>
+              </div>
+            </div>
+            <div class="number-input-container">
+              <button class="button-minus button-number" type="button">
+                <span class="visually-hidden">Уменьшить количество</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M16 7H0V9H16V7Z" fill="black"/>
+                </svg>
+              </button>
+              <input class="modal-input standart-input number-input" id="quantity" type="number" name="quantity">
+              <button class="button-plus button-number" type="button">
+                <span class="visually-hidden">Увеличить количество</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <g clip-path="url(#clip0_56064_681)">
+                  <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_56064_681">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          <button class="modal-submit-button button-link">Отправить</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
